@@ -1,4 +1,4 @@
-import React,{ Component } from 'react';
+import React, { Component } from 'react';
 import { Table } from '@finos/perspective';
 import { ServerRespond } from './DataStreamer';
 import './Graph.css';
@@ -25,7 +25,6 @@ interface PerspectiveViewerElement extends HTMLElement {
 class Graph extends Component<IProps, {}> {
   // Perspective table
   table: Table | undefined;
-  props: any;
 
   render() {
     return React.createElement('perspective-viewer');
